@@ -1,5 +1,5 @@
 ---
 # handler to start httpd service
-
-- name: Start Httpd
-  service: name:httpd state=started
+tasks:
+ - name: Start Httpd
+   service: name:httpd state=started
