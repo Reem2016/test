@@ -1,4 +1,5 @@
 ---
- - name: Install httpd
-   include: install-httpd.yml
+ tasks:
+   - name: Install httpd
+     include: install-httpd.yml
  #- include: install-httpd.yml
