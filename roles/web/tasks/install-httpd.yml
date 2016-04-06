@@ -1,0 +1,11 @@
+---
+# these tasks install http and the php modules.
+
+- name: Install httpd packages
+  action: yum name={{ item }} state=installed
+  with_items:
+   - httpd
+   - php    
+
+  notify:
+   - Start Httpd
