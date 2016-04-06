@@ -18,7 +18,7 @@ install:
 
 script:
   # Check the role/playbook's syntax.
-  - "ansible-playbook main.yml --syntax-check"
+  #- "ansible-playbook main.yml --syntax-check"
 
   # Run the role/playbook with ansible-playbook.
   - "ansible-playbook main.yml --connection=local --sudo"
